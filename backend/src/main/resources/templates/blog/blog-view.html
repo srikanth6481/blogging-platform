@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>View Blog Post</title>
+</head>
+<body>
+<h1 th:text="${post.title}"></h1>
+<p th:text="${post.content}"></p>
+<a href="/blogs">Back to List</a>
+<a th:href="@{/blogs/{id}/edit(id=${post.id})}">Edit</a>
+</body>
+</html>
